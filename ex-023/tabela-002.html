@@ -9,28 +9,36 @@
         body {font-family: Arial, Helvetica,
              sans-serif;}
 
-        table {width: 500px; border-collapse: separate;}
+        table {width: 530px; border-collapse: separate;}
         td,th {border: 1px solid black;padding: 10px;}
         th,tfoot {background-color: rgb(54, 53, 53);color: white;}
         td.num {text-align: right;}
+        caption { background-color: rgb(105, 101, 101); font-size: 1.5em;
+        font-weight: bold; padding: 10px;}
 
     </STyle>
 </head>
 
 
 <body>
-    <h1>tabelas grandes</h1>
-    <!-- hierarquia de tabela 
+    <h1>uso de tabelas grandes</h1>
+    <!-- anatomia de tabelas grandes 
          tabela = table
-               table row = linha de tabela
-               table data = dados da tabela  -->  
+         caption=legenda da tabela 
+            thead
+                tr= tabela linha, td=tabela dados, th=
+            tbody
+                tr, td,th
+            tfoot
+                tr, td, th -->  
     <table>
-        <header>
+        <caption>população das unidades federativas </caption>
+        <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
+                <th scope="col">estado</th>
+                <th scope="col"style="width: 50px;">população</th>
             </tr>
-        </header>
+        </thead>
         
         <tbody>
             <td>sao paulo</td>
@@ -38,7 +46,7 @@
         </tbody>
 
         <tfoot>
-            <th>total de habitantes</th>
+            <th scope="row">total de habitantes</th>
             <td class="num">0000000</td>
         </tfoot>
     </table>         
