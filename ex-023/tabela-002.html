@@ -6,14 +6,27 @@
     initial-scale=1.0">
     <title>tabelas</title>
     <STyle>
+        thead > tr > th {position: sticky; top: -1px;
+         background-color: rgb(54, 53, 53);}
+
         body {font-family: Arial, Helvetica,
              sans-serif;}
 
-        table {width: 530px; border-collapse: separate;}
+        tbody > tr:nth-child(even) {background-color: darkgray;}
+        /*(even) SIGUINIFICA QUE A CONFIG VAI SER APLICADO APENAS 
+         NAS LINHAS PARES E (odd) nas linhas impares */
+
+        table {width: 530px; border-collapse: separate;
+        position: relative;}
+
         td,th {border: 1px solid black;padding: 10px;}
+
         th,tfoot {background-color: rgb(54, 53, 53);color: white;}
+
         td.num {text-align: right;}
-        caption { background-color: rgb(105, 101, 101); font-size: 1.5em;
+
+        caption {
+        color: white; background-color: rgb(54, 53, 53); font-size: 1.5em;
         font-weight: bold; padding: 10px;}
 
     </STyle>
@@ -36,20 +49,170 @@
         <thead>
             <tr>
                 <th scope="col">estado</th>
-                <th scope="col"style="width: 50px;">população</th>
+                <th scope="col"style="width: 100px;">população</th>
             </tr>
         </thead>
         
         <tbody>
-            <td>sao paulo</td>
-            <td class="num">49 919 049</td>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>pernambuco</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>bahia</td>
+                <td class="num">1400000</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>pernambuco</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>bahia</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>pernambuco</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>bahia</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>pernambuco</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>bahia</td>
+                <td class="num">1400000</td>
+            </tr>
+            <tr>
+                <td>pernambuco</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>bahia</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>pernambuco</td>
+                <td class="num">1400000</td>
+            </tr>
+             <tr>
+                <td>bahia</td>
+                <td class="num">1400000</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <th scope="row">total de habitantes</th>
             <td class="num">0000000</td>
         </tfoot>
-    </table>         
+    </table>  
+    <footer>
+        <p>
+                Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat.
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat.
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+                   Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Sint doloribus
+                  repudiandae veniam nesciunt in porro
+                   dicta cum iusto, quibusdam laudantium 
+                   dolore. Libero porro voluptatibus excepturi 
+                   ulla aspernatur ratione, quasi repellat
+            </p>
+    </footer>       
 </body>
 
 </html>
