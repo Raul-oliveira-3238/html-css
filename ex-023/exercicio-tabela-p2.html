@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>exercicio de tabela p2</title>
+
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        table {border-collapse: collapse; text-align: center}
+
+        td {border: 1px solid black; padding: 10px; width: 100px;}
+
+        .td-medias {text-align: left; background-color: darkgrey;
+        color: white; 
+                  }
+        .td-alinhamento {text-align: left; padding: 0;}
+
+        .td-tipo-cabeça{ background-color: darkgrey;
+        color: white; }
+
+        
+    </style>
+</head>
+
+
+<body>
+    
+    <table>
+        <tr>
+            <td rowspan="2" class="td-tipo-cabeça">area</td>
+            <td rowspan="2" class="td-tipo-cabeça">diciplina</td>
+            <td colspan="2"class="td-tipo-cabeça">notas</td>
+            <td rowspan="2" class="td-tipo-cabeça">media
+        </tr>
+        <tr>
+            <td class="td-tipo-cabeça">nota 1</td>
+            <td class="td-tipo-cabeça">nota 2</td>
+        </tr>
+
+        <tr>
+            <td rowspan="5">exatas</td>
+        </tr>
+
+        <tr>
+            <td class="td-alinhamento">matematica</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+
+        <tr>
+            <td class="td-alinhamento">fisica</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+
+        <tr>
+            <td class="td-alinhamento">quimica</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+
+        <tr>
+            <td class="td-alinhamento">biologia</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+
+        <tr>
+            <td colspan="4"class="td-medias">media de exatas</td>
+            <td class="td-tipo-cabeça">00</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">humanas</td>
+            <td class="td-alinhamento">historia</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        <tr>
+            <td class="td-alinhamento">geografia</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="td-medias"  >medias humanas</td>
+            <td class="td-tipo-cabeça">00</td>
+        </tr>
+    </table>
+</body>
+
+</html>
