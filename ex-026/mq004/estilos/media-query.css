@@ -1,2 +1,31 @@
 @charset "UTF8";
 /*TODAS AS DEMAIS MEDIAS*/
+
+/* TIPICAL DEVAICE BREAKPOINTS
+PEQUENAS TELAS ATE 600PX
+CELULAR DE 600PX ATE 768PX
+TABLET DE 768 ATE 992PX
+DESKTOP DE 992 ATE 1200PX
+GRANDES TELAS ACIMA DE 1200PX*/
+
+@MEDIA PRNT{}
+
+@MEDIA SCREN AND (MIN-WIDTH: 768PXPX)  AND (MAX-WIDTH: 992PX){/*TABLET*/}
+
+BODY {BACKGROUND-IMAGE: URL(../imagens/back-tablet.jpg);}
+
+@MEDIA SCREN AND (MIN-WIDTH:992PX) AND (MAX-WIDTH: 1200PX){/*DESKTOP*/
+   body {background-image: url(../imagens/icon-pc.png);}
+
+img#phone {display: none;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#pc{display: block;}
+img#tv{display: none;}
+
+@MEDIA SCREEN AND (MIN-WIDTH: 1200PX){/*TELAS GRANDES*/}
+
+img#phone {display: none;}
+img#tablet {display: block;}
+img#print {display: none;}
+img#tv{display: none;}
