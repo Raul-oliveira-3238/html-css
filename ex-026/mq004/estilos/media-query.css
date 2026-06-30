@@ -1,31 +1,34 @@
-@charset "UTF8";
-/*TODAS AS DEMAIS MEDIAS*/
+@charset "UTF-8";
 
-/* TIPICAL DEVAICE BREAKPOINTS
-PEQUENAS TELAS ATE 600PX
-CELULAR DE 600PX ATE 768PX
-TABLET DE 768 ATE 992PX
-DESKTOP DE 992 ATE 1200PX
-GRANDES TELAS ACIMA DE 1200PX*/
+/* TODAS AS DEMAIS MEDIAS */
 
-@MEDIA PRNT{}
+@media print {
+    /* Regras para impressão aqui se necessário */
+}
 
-@MEDIA SCREN AND (MIN-WIDTH: 768PXPX)  AND (MAX-WIDTH: 992PX){/*TABLET*/}
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+}
 
-BODY {BACKGROUND-IMAGE: URL(../imagens/back-tablet.jpg);}
+/* DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/icon-pc.png);
+    }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+}
 
-@MEDIA SCREN AND (MIN-WIDTH:992PX) AND (MAX-WIDTH: 1200PX){/*DESKTOP*/
-   body {background-image: url(../imagens/icon-pc.png);}
-
-img#phone {display: none;}
-img#tablet {display: none;}
-img#print {display: none;}
-img#pc{display: block;}
-img#tv{display: none;}
-
-@MEDIA SCREEN AND (MIN-WIDTH: 1200PX){/*TELAS GRANDES*/}
-
-img#phone {display: none;}
-img#tablet {display: block;}
-img#print {display: none;}
-img#tv{display: none;}
+/* TELAS GRANDES */
+@media screen and (min-width: 1200px) {
+    img#phone { display: none; }
+    img#tablet { display: block; } /* Note que aqui você colocou o tablet como block para telas grandes, ajuste se necessário */
+    img#print { display: none; }
+    img#tv { display: none; }
+}
