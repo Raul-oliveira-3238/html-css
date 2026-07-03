@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+   font-family: arial, helvetica, sans-serif;}
+
+body, html {
+   background-color: lightgray;}
+
+header {
+   background-color: gray;
+   padding: 20px;
+   text-align: center;
+   font-size: 30px; font-weight: bold;}
+
+menu {
+   display: block;
+   font-size: 30px;}
+
+menu > ul {
+   list-style-type: none;}
+
+menu > ul > li > a {
+   display: block; 
+   padding: 10px; 
+   text-decoration: none;
+   background-color: rgb(71, 63, 63);}
