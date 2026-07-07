@@ -10,7 +10,7 @@ body, html {
    background-color: rgb(223, 221, 221);}
 
 header {
-   background-color: rgb(250, 248, 248);
+   background-color: rgb(209, 206, 206);
    }
 
 header > h1 {
@@ -19,9 +19,22 @@ header > h1 {
    font-size: 30px;
    font-weight: bold;
 }
+i#burguer {
+   background-color: rgb(95, 95, 95);
+   color: white;
+   display: block;
+   text-align: center;
+   padding: 10px;
+   cursor: pointer;
+}
+
+i#burguer:hover {
+   background-color: white;
+   color: black;
+}
 
 menu {
-   display: block;
+   display: none;;
 }
 
 menu > ul {
