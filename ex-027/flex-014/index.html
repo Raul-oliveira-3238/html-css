@@ -3,55 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>conteudo flex</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header class="normal">
-    <h1>exemplo de conteudo flexivel</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque amet quas, eos laborum sapiente vitae at commodi, debitis ducimus, magni ad autem corrupti ipsa earum veniam accusamus voluptatum dolor fugit!</p>
-
-    <main>
-      <section class="flex-content">
-        <article class="media-text">
-          <div class="text">
-            <h2>elemento media->text</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias repellendus eligendi dicta praesentium iste, fugiat expedita molestiae, doloribus, ipsa ex! Voluptate animi eum tempore! Itaque praesentium non nulla consequuntur.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, voluptatem. Esse laboriosam hic aliquid corporis? Sunt tenetur praesentium esse necessitatibus velit vel fugit ipsa cupiditate. Aperiam explicabo nobis quos nisi.
-            </p>
-          </div>
-
-          <div class="media">
-            <img src="imagem/chart-3d-rendering-icon-illustration-free-png.webp" alt="textando media flexbox">
-          </div>
-
-        </article>
-
-        <article classe="text-media">
-          <div class="text">
-            <h2>elemento text-media</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias repellendus eligendi dicta praesentium iste, fugiat expedita molestiae, doloribus, ipsa ex! Voluptate animi eum tempore! Itaque praesentium non nulla consequuntur.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, voluptatem. Esse laboriosam hic aliquid corporis? Sunt tenetur praesentium esse necessitatibus velit vel fugit ipsa cupiditate. Aperiam explicabo nobis quos nisi.
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem. Esse laboriosam hic aliquid corporis? Sunt tenetur praesentium esse necessitatibus velit vel fugit ipsa cupiditate. Aperiam explicabo nobis quos nisi.
-            </p>
-
-          </div>
-          <div class="media">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/E0k6mAhxSKU" frameborder="0" allow="accelerometer;autoplay;clipboard-write; encrypted-media;gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          
-        </article>
-      </section>
-
-      <section class="normal">
-        <h2>conteudo normal</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque amet quas, eos laborum sapiente vitae at commodi, debitis ducimus, magni ad autem corrupti ipsa earum veniam accusamus voluptatum dolor fugit!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita fugiat vitae asperiores dicta temporibus facere accusantium quis dolorum dignissimos? Tempore est nobis iusto, exercitationem optio ea nemo sunt aspernatur.
-        </p>
-      </section>
-
-    </main>  
+    <h1>Exemplo de conteudo flexivel</h1>
+    <p>este conteudo e um exemplo para conteudo flexivel, prestem atenção na quebra de conteudo ao mudar o tamanho das telas</p>
   </header>
+
+  <main>
+    <section class="flex-content">
+      <article class="media->texto">
+        <div class="media">
+          <h2>elemento media -> texto</h2>
+          <img src="imagem/chart-3d-rendering-icon-illustration-free-png.webp">
+        </div>
+
+        <div class="text">
+          <h2>elemento texto -> media</h2>
+        </div>
+
+      </article>
+
+      <article classe="texto->media">
+        <div class="text">
+
+        </div>
+        <div class="media">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/48gNGYCTwvk?si=TnpV6mo39e79ZaeR&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+      </article>
+    </section><!--fim da seçao flex-content-->
+
+    <section class="normal"> 
+      <h2>conteudo normal</h2>
+      <p>texto normal, mas flexivel</p>
+    </section>
+  </main>
+  
 </body>
 </html>
