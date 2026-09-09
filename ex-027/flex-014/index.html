@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>conteudo flex</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conteudo flex</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="normal">
-    <h1>Exemplo de conteudo flexivel</h1>
-    <p>este conteudo e um exemplo para conteudo flexivel, prestem atenção na quebra de conteudo ao mudar o tamanho das telas</p>
-  </header>
+    <header class="normal">
+        <h1>Exemplo de conteudo flexivel</h1>
+        <p>este conteudo e um exemplo para conteudo flexivel, prestem atenção na quebra de conteudo ao mudar o tamanho das telas</p>
+    </header>
+    <main>
+        <section class="flex-content">
+            <article class="media-text">
+                <div class="text">
+                </div>
+                <div class="text">
+                    <h2>elemento media->texto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, modi. Id deserunt obcaecati odit suscipit non beatae perspiciatis accusamus. Error iste iure optio neque facilis consectetur ad dolor fugiat saepe.</p>
+                </div>
+               <div class="media">
+                 <img src="imagem/chart-3d-rendering-icon-illustration-free-png.webp" alt="Gráfico 3D">
+                 </div> 
+            </article>
+            <article class="text-media">
+                <div class="text">
+                    <h2>elemento text->media</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum doloribus, id tempore suscipit voluptatem fuga molestias neque quasi nostrum dolor ipsum, eum, fugit maiores? Omnis, porro iste! Voluptatem, asperiores.</p>
+                </div>
+                <div class="media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/48gNGYCTwvk?si=TnpV6mo39e79ZaeR&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
 
-  <main>
-    <section class="flex-content">
-      <article class="media->texto">
-        <div class="media">
-          <h2>elemento media -> texto</h2>
-          <img src="imagem/chart-3d-rendering-icon-illustration-free-png.webp">
-        </div>
-
-        <div class="text">
-          <h2>elemento texto -> media</h2>
-        </div>
-
-      </article>
-
-      <article classe="texto->media">
-        <div class="text">
-
-        </div>
-        <div class="media">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/48gNGYCTwvk?si=TnpV6mo39e79ZaeR&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-      </article>
-    </section><!--fim da seçao flex-content-->
-
-    <section class="normal"> 
-      <h2>conteudo normal</h2>
-      <p>texto normal, mas flexivel</p>
-    </section>
-  </main>
-  
+        <section class="normal">
+            <h2>conteudo normal</h2>
+            <p>texto normal, mas não flexivel
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius autem neque animi perferendis consequatur aspernatur laboriosam similique eos quibusdam fuga sit nobis iure odio, sapiente, sunt eveniet voluptatum qui sint!
+            </p> 
+        </section>    
+    </main>
 </body>
 </html>
