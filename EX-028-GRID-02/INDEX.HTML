@@ -4,16 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>grid layout na pratica</title>
+  <title>grid-02 na pratica</title>
   <style>
     div.container {
       border: 3px solid blue;
       height: 250px;
       display: grid;
-      grid-template-columns: auto auto auto;
-      grid templete-rows: auto auto auto;
-      gap: 5px;
+      grid-template: repeat(3, auto) / repeat(3, auto);
+      gap: 10px;
+      place-items: start center;
+      place-content: space-between end;
     }
+ 
+     
 
     div.item {
       border: 3px solid red;
